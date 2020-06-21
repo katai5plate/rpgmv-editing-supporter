@@ -13,6 +13,16 @@
   --nc-ac-tx: rgb(37, 40, 42);
 }
 
+h1 {
+  border-width: 8px;
+}
+h2 {
+  border-width: 4px;
+}
+h3 {
+  border-width: 2px;
+}
+
 tr:nth-child(odd) {
   background: rgb(43, 46, 48);
 }
