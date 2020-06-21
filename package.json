@@ -20,7 +20,7 @@
     "start": "npm run build && electron ./dist/main.js"
   },
   "devDependencies": {
-    "electron": "^9.0.4",
+    "electron": "7.3.1",
     "typescript": "^3.9.5"
   },
   "dependencies": {
