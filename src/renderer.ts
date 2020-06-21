@@ -6,3 +6,4 @@
 // レンダラープロセスで必要な機能を選択的に有効にします。
 
 document.querySelector("#app").innerHTML = "読み込み中...";
+document.title = new Date().toLocaleTimeString();

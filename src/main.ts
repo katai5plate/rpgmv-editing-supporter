@@ -1,6 +1,5 @@
-import { app, BrowserWindow, session } from "electron";
+import { app, BrowserWindow } from "electron";
 import * as path from "path";
-import { homedir } from "os";
 
 require("electron-reload")(__dirname, {
   electron: require("${__dirname}/../../node_modules/electron"),
@@ -11,7 +10,8 @@ function createWindow() {
   const mainWindow = new BrowserWindow({
     height: 600,
     webPreferences: {
-      preload: path.join(__dirname, "preload.js"),
+      preload: path.join(__dirname, "app.js"),
+      // webSecurity: false,
       // nodeIntegration: true,
       // enableRemoteModule: true,
     },
