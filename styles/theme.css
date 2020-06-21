@@ -3,12 +3,16 @@
   /* --nc-font-mono: monospace; */
   --nc-tx-1: rgb(221, 221, 221);
   --nc-tx-2: rgb(184, 184, 184);
-  --nc-bg-1: rgb(47, 51, 53);
-  --nc-bg-2: rgb(61, 65, 67);
-  --nc-bg-3: rgb(71, 75, 77);
-  --nc-lk-1: rgb(90, 94, 96);
-  --nc-lk-2: rgb(107, 111, 113);
+  --nc-bg-1: rgb(70, 74, 76);
+  --nc-bg-2: rgb(36, 40, 41);
+  --nc-bg-3: rgb(47, 51, 53);
+  --nc-lk-1: rgb(63, 109, 195);
+  --nc-lk-2: rgb(88, 137, 228);
   --nc-lk-tx: rgb(201, 201, 201);
-  --nc-ac-1: rgb(86, 126, 202);
+  --nc-ac-1: rgb(221, 221, 221);
   --nc-ac-tx: rgb(37, 40, 42);
+}
+
+tr:nth-child(odd) {
+  background: rgb(43, 46, 48);
 }
