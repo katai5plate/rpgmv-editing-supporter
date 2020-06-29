@@ -34,7 +34,9 @@ export const genKey = () => ({
   key: randomText(),
 });
 
-/** DOM を作る */
+/** DOM を作る
+ * FIXME: インテリセンスが効かないのをなんとかする
+ */
 export const el = <P = {}, Props = PropsWithChildren<P>>(
   type: ReactHTML | ReactSVG | string,
   attr?: Attributes<Props>,
