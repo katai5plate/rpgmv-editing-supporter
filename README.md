@@ -6,9 +6,9 @@ RPG ツクール MV の補助ツールを作ってみるテスト
 
 1. `git clone https://github.com/katai5plate/rpgmv-editing-supporter`
 2. `yarn`
-3. `yarn build`
+3. `yarn start`
 
-- 実行するときは `yarn start`
+- ビルドするときは `yarn build`
 - 開発するときは `yarn watch`
 
 ## メモ
