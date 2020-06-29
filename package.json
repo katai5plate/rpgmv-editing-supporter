@@ -17,7 +17,7 @@
   "scripts": {
     "build": "tsc",
     "watch": "tsc -w",
-    "start": "npm run build && electron ./dist/main.js"
+    "start": "electron ./dist/main.js"
   },
   "devDependencies": {
     "electron": "7.3.1",
