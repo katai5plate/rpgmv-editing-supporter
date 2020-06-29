@@ -1,6 +1,6 @@
 # rpgmv-editing-supporter
 
-RPG ツクール MV の補助ツール
+RPG ツクール MV の補助ツールを作ってみるテスト
 
 ## メモ
 
