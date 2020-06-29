@@ -2,6 +2,15 @@
 
 RPG ツクール MV の補助ツールを作ってみるテスト
 
+## Usage
+
+1. `git clone https://github.com/katai5plate/rpgmv-editing-supporter`
+2. `yarn`
+3. `yarn build`
+
+- 実行するときは `yarn start`
+- 開発するときは `yarn watch`
+
 ## メモ
 
 - なぜか `clipboard.writeBuffer` が `Electron 7.3.1` じゃないと正常動作しない。
