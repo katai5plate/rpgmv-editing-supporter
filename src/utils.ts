@@ -42,13 +42,11 @@ export const el = <P = {}, Props = PropsWithChildren<P>>(
 ) => createElement(type as any, { ...genKey(), ...attr }, ...node);
 /** コンポーネントを作る */
 export const fc = <P = {}, Props = PropsWithChildren<P>>(
-  fn: (props: Props) => ReturnType<typeof createElement>
+  fn: (props?: Props) => ReturnType<typeof createElement>
 ) => fn;
-/** ファイル出力用コンポーネントを作る */
-export const to = <P = {}, Props = PropsWithChildren<P>>(
-  props?: Attributes<Props>,
-  ...node: ReactNode[]
-) => createElement(Fragment, { ...genKey(), ...props }, ...node);
+/** コンポーネントをひとまとめにする */
+export const pk = (node: ReactNode[]) =>
+  createElement(Fragment, genKey(), ...node);
 
 const getClipFormat = (name: string) =>
   `${
@@ -57,7 +55,7 @@ const getClipFormat = (name: string) =>
       : "application/"
   }${name}`;
 export const getMvClip = (name: string) =>
-  JSON.parse(clipboard.readBuffer(getClipFormat(name)).toString("utf8"));
+  JSON.parse(clipboard.readBuffer(getClipFormat(name)).toString());
 export const setMvClip = (name: string, data: AnyObj | any[]) =>
   clipboard.writeBuffer(getClipFormat(name), Buffer.from(JSON.stringify(data)));
 

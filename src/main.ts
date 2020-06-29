@@ -12,7 +12,7 @@ function createWindow() {
     webPreferences: {
       preload: path.join(__dirname, "app.js"),
       // webSecurity: false,
-      // nodeIntegration: true,
+      nodeIntegration: true, // セキュリティ上危ないので本番ビルド時は false にする
       // enableRemoteModule: true,
     },
     width: 800,
